@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-f5-Nm8">
+                                <rect key="frame" x="14" y="269" width="183" height="31"/>
+                                <connections>
+                                    <action selector="adjustAccent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="JGd-Uw-rP5"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" minValue="30" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="IGn-jn-yc7">
+                                <rect key="frame" x="14" y="195" width="183" height="31"/>
+                                <connections>
+                                    <action selector="adjustBPM:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Wde-yf-mmo"/>
+                                </connections>
+                            </slider>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" minimumValue="30" maximumValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-3A-1FG">
+                                <rect key="frame" x="210" y="195" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepBPM:" destination="vXZ-lx-hvc" eventType="valueChanged" id="r4O-dA-MN2"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0N-yC-FdP">
+                                <rect key="frame" x="99" y="90" width="122" height="97"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEr-vC-qvm">
+                                <rect key="frame" x="137" y="498" width="46" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="Stop"/>
+                                <connections>
+                                    <action selector="toggleMet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="v9V-SC-SBA"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.75" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NGH-xy-Ry6">
+                                <rect key="frame" x="14" y="349" width="183" height="31"/>
+                                <connections>
+                                    <action selector="adjustEighth:" destination="vXZ-lx-hvc" eventType="valueChanged" id="2XP-fg-C8p"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dth-f4-bjg">
+                                <rect key="frame" x="234" y="349" width="46" height="30"/>
+                                <state key="normal" title="1/8">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="1/8"/>
+                                <connections>
+                                    <action selector="toggleEighth:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SIb-sJ-ber"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3t-6o-HRi">
+                                <rect key="frame" x="234" y="387" width="46" height="30"/>
+                                <state key="normal" title="1/16">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="1/16"/>
+                                <connections>
+                                    <action selector="toggleSixteenth:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QG8-xi-5rC"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gMX-Yn-Cgq">
+                                <rect key="frame" x="14" y="387" width="183" height="31"/>
+                                <connections>
+                                    <action selector="adjustSixteenth:" destination="vXZ-lx-hvc" eventType="valueChanged" id="WmH-ce-lfN"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fpf-jE-9MX">
+                                <rect key="frame" x="14" y="311" width="183" height="31"/>
+                                <connections>
+                                    <action selector="adjustQuarter:" destination="vXZ-lx-hvc" eventType="valueChanged" id="2ze-an-6fo"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufy-ug-fQd">
+                                <rect key="frame" x="234" y="269" width="46" height="30"/>
+                                <state key="normal" title="1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleAccent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cq7-Q0-gSh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhv-9u-bZz">
+                                <rect key="frame" x="234" y="311" width="46" height="30"/>
+                                <state key="normal" title="1/4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleQuarter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="86Y-it-nb9"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vVY-JI-jmO">
+                                <rect key="frame" x="16" y="230" width="288" height="33"/>
+                                <connections>
+                                    <segue destination="ugl-NB-wqE" kind="embed" id="Ttg-OD-uvb"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="accentButton" destination="Ufy-ug-fQd" id="4kB-kR-Yyg"/>
+                        <outlet property="accentVol" destination="aQU-f5-Nm8" id="yy4-8f-eqa"/>
+                        <outlet property="bpmControl" destination="IGn-jn-yc7" id="ezN-m8-Aqu"/>
+                        <outlet property="bpmDisplay" destination="g0N-yC-FdP" id="xHb-oO-r8I"/>
+                        <outlet property="bpmStep" destination="y5U-3A-1FG" id="M59-2R-EVW"/>
+                        <outlet property="eighthButton" destination="Dth-f4-bjg" id="Ktc-kZ-aeZ"/>
+                        <outlet property="eighthVol" destination="NGH-xy-Ry6" id="GV8-4c-ba0"/>
+                        <outlet property="masterVolView" destination="vVY-JI-jmO" id="5ey-BZ-8kS"/>
+                        <outlet property="quarterButton" destination="bhv-9u-bZz" id="Dwf-40-iOB"/>
+                        <outlet property="quarterVol" destination="fpf-jE-9MX" id="b2J-tp-p3X"/>
+                        <outlet property="sixteenthButton" destination="V3t-6o-HRi" id="qAR-06-cwb"/>
+                        <outlet property="sixteenthVol" destination="gMX-Yn-Cgq" id="JzT-MZ-xcQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3vf-Rl-Vn3">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ugl-NB-wqE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iXn-EW-C7b"/>
+                        <viewControllerLayoutGuide type="bottom" id="0dx-3o-LN7"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8bd-vi-uaq">
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="33"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALT-MA-x8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

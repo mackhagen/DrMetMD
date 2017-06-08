@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0109A8721ADF3D3700D2DAA2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0109A8711ADF3D3700D2DAA2 /* MediaPlayer.framework */; };
+		0116F2521ADF631300BFAD80 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0116F2511ADF631300BFAD80 /* CoreAudio.framework */; };
+		013977FE1B5701FB0059CE13 /* Metronome.m in Sources */ = {isa = PBXBuildFile; fileRef = 013977FD1B5701FB0059CE13 /* Metronome.m */; };
+		01584DAF1A9EC285008DE15A /* hi_click loud.wav in Resources */ = {isa = PBXBuildFile; fileRef = 01584DAC1A9EC285008DE15A /* hi_click loud.wav */; };
+		01584DB01A9EC285008DE15A /* low_click loud.wav in Resources */ = {isa = PBXBuildFile; fileRef = 01584DAD1A9EC285008DE15A /* low_click loud.wav */; };
+		01584DB11A9EC285008DE15A /* softclick hi res.wav in Resources */ = {isa = PBXBuildFile; fileRef = 01584DAE1A9EC285008DE15A /* softclick hi res.wav */; };
+		0191B24219626C180049A20C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0191B24119626C180049A20C /* Foundation.framework */; };
+		0191B24419626C180049A20C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0191B24319626C180049A20C /* CoreGraphics.framework */; };
+		0191B24619626C180049A20C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0191B24519626C180049A20C /* UIKit.framework */; };
+		0191B24C19626C180049A20C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0191B24A19626C180049A20C /* InfoPlist.strings */; };
+		0191B24E19626C180049A20C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0191B24D19626C180049A20C /* main.m */; };
+		0191B25219626C180049A20C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0191B25119626C180049A20C /* AppDelegate.m */; };
+		0191B25519626C180049A20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0191B25319626C180049A20C /* Main.storyboard */; };
+		0191B25819626C180049A20C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0191B25719626C180049A20C /* ViewController.m */; };
+		0191B25A19626C180049A20C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0191B25919626C180049A20C /* Images.xcassets */; };
+		0191B26119626C180049A20C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0191B26019626C180049A20C /* XCTest.framework */; };
+		0191B26219626C180049A20C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0191B24119626C180049A20C /* Foundation.framework */; };
+		0191B26319626C180049A20C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0191B24519626C180049A20C /* UIKit.framework */; };
+		0191B26B19626C180049A20C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0191B26919626C180049A20C /* InfoPlist.strings */; };
+		0191B26D19626C180049A20C /* DrMetMDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0191B26C19626C180049A20C /* DrMetMDTests.m */; };
+		0196DD60196BABF80080ABD4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0196DD5F196BABF80080ABD4 /* AVFoundation.framework */; };
+		01A85CFC19947EA100DD0299 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 01A85CFB19947EA100DD0299 /* 1.wav */; };
+		01AB35071A033F9E0040D30B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AB35061A033F9E0040D30B /* AudioToolbox.framework */; };
+		01AB35091A0343560040D30B /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AB35081A0343560040D30B /* OpenAL.framework */; };
+		01E87B011A034E1300ABF0E3 /* OALAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AC21A034E1300ABF0E3 /* OALAction.m */; };
+		01E87B021A034E1300ABF0E3 /* OALActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AC41A034E1300ABF0E3 /* OALActionManager.m */; };
+		01E87B031A034E1300ABF0E3 /* OALAudioActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AC61A034E1300ABF0E3 /* OALAudioActions.m */; };
+		01E87B041A034E1300ABF0E3 /* OALUtilityActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AC81A034E1300ABF0E3 /* OALUtilityActions.m */; };
+		01E87B051A034E1300ABF0E3 /* OALAudioTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87ACB1A034E1300ABF0E3 /* OALAudioTrack.m */; };
+		01E87B061A034E1300ABF0E3 /* OALAudioTrackNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87ACD1A034E1300ABF0E3 /* OALAudioTrackNotifications.m */; };
+		01E87B071A034E1300ABF0E3 /* OALAudioTracks.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87ACF1A034E1300ABF0E3 /* OALAudioTracks.m */; };
+		01E87B081A034E1300ABF0E3 /* OALSimpleAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AD11A034E1300ABF0E3 /* OALSimpleAudio.m */; };
+		01E87B091A034E1300ABF0E3 /* ALBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AD61A034E1300ABF0E3 /* ALBuffer.m */; };
+		01E87B0A1A034E1300ABF0E3 /* ALCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AD81A034E1300ABF0E3 /* ALCaptureDevice.m */; };
+		01E87B0B1A034E1300ABF0E3 /* ALChannelSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87ADA1A034E1300ABF0E3 /* ALChannelSource.m */; };
+		01E87B0C1A034E1300ABF0E3 /* ALContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87ADC1A034E1300ABF0E3 /* ALContext.m */; };
+		01E87B0D1A034E1300ABF0E3 /* ALDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87ADE1A034E1300ABF0E3 /* ALDevice.m */; };
+		01E87B0E1A034E1300ABF0E3 /* ALListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AE01A034E1300ABF0E3 /* ALListener.m */; };
+		01E87B0F1A034E1300ABF0E3 /* ALSoundSourcePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AE31A034E1300ABF0E3 /* ALSoundSourcePool.m */; };
+		01E87B101A034E1300ABF0E3 /* ALSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AE51A034E1300ABF0E3 /* ALSource.m */; };
+		01E87B111A034E1300ABF0E3 /* ALWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AE81A034E1300ABF0E3 /* ALWrapper.m */; };
+		01E87B121A034E1300ABF0E3 /* OpenALManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AEA1A034E1300ABF0E3 /* OpenALManager.m */; };
+		01E87B131A034E1300ABF0E3 /* OALAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AED1A034E1300ABF0E3 /* OALAudioSession.m */; };
+		01E87B141A034E1300ABF0E3 /* OALSuspendHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AEF1A034E1300ABF0E3 /* OALSuspendHandler.m */; };
+		01E87B151A034E1300ABF0E3 /* IOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AF31A034E1300ABF0E3 /* IOSVersion.m */; };
+		01E87B161A034E1300ABF0E3 /* mach_timing.c in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AF41A034E1300ABF0E3 /* mach_timing.c */; };
+		01E87B171A034E1300ABF0E3 /* NSMutableArray+WeakReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AF71A034E1300ABF0E3 /* NSMutableArray+WeakReferences.m */; };
+		01E87B181A034E1300ABF0E3 /* NSMutableDictionary+WeakReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AF91A034E1300ABF0E3 /* NSMutableDictionary+WeakReferences.m */; };
+		01E87B191A034E1300ABF0E3 /* OALAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AFB1A034E1300ABF0E3 /* OALAudioFile.m */; };
+		01E87B1A1A034E1300ABF0E3 /* OALTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E87AFE1A034E1300ABF0E3 /* OALTools.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0191B26419626C180049A20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0191B23619626C180049A20C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0191B23D19626C180049A20C;
+			remoteInfo = DrMetMD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0109A8711ADF3D3700D2DAA2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0116F2511ADF631300BFAD80 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		013977FC1B5701FB0059CE13 /* Metronome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metronome.h; sourceTree = "<group>"; };
+		013977FD1B5701FB0059CE13 /* Metronome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Metronome.m; sourceTree = "<group>"; };
+		01584DAC1A9EC285008DE15A /* hi_click loud.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hi_click loud.wav"; sourceTree = "<group>"; };
+		01584DAD1A9EC285008DE15A /* low_click loud.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "low_click loud.wav"; sourceTree = "<group>"; };
+		01584DAE1A9EC285008DE15A /* softclick hi res.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "softclick hi res.wav"; sourceTree = "<group>"; };
+		0191B23E19626C180049A20C /* DrMetMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrMetMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0191B24119626C180049A20C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0191B24319626C180049A20C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0191B24519626C180049A20C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0191B24919626C180049A20C /* DrMetMD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrMetMD-Info.plist"; sourceTree = "<group>"; };
+		0191B24B19626C180049A20C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0191B24D19626C180049A20C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0191B24F19626C180049A20C /* DrMetMD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrMetMD-Prefix.pch"; sourceTree = "<group>"; };
+		0191B25019626C180049A20C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0191B25119626C180049A20C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0191B25419626C180049A20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0191B25619626C180049A20C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0191B25719626C180049A20C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0191B25919626C180049A20C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0191B25F19626C180049A20C /* DrMetMDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrMetMDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0191B26019626C180049A20C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0191B26819626C180049A20C /* DrMetMDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrMetMDTests-Info.plist"; sourceTree = "<group>"; };
+		0191B26A19626C180049A20C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0191B26C19626C180049A20C /* DrMetMDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrMetMDTests.m; sourceTree = "<group>"; };
+		0196DD5F196BABF80080ABD4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		01A85CFB19947EA100DD0299 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		01AB35061A033F9E0040D30B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		01AB35081A0343560040D30B /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		01AB35861A0346980040D30B /* libFinch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFinch.a; path = "../../../../Desktop/Finch/build/Debug-iphoneos/libFinch.a"; sourceTree = "<group>"; };
+		01E87ABC1A034A0600ABF0E3 /* libFinch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFinch.a; path = "Finch/build/Debug-iphoneos/libFinch.a"; sourceTree = "<group>"; };
+		01E87AC01A034E1300ABF0E3 /* OALAction+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OALAction+Private.h"; sourceTree = "<group>"; };
+		01E87AC11A034E1300ABF0E3 /* OALAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAction.h; sourceTree = "<group>"; };
+		01E87AC21A034E1300ABF0E3 /* OALAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAction.m; sourceTree = "<group>"; };
+		01E87AC31A034E1300ABF0E3 /* OALActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALActionManager.h; sourceTree = "<group>"; };
+		01E87AC41A034E1300ABF0E3 /* OALActionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALActionManager.m; sourceTree = "<group>"; };
+		01E87AC51A034E1300ABF0E3 /* OALAudioActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioActions.h; sourceTree = "<group>"; };
+		01E87AC61A034E1300ABF0E3 /* OALAudioActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioActions.m; sourceTree = "<group>"; };
+		01E87AC71A034E1300ABF0E3 /* OALUtilityActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALUtilityActions.h; sourceTree = "<group>"; };
+		01E87AC81A034E1300ABF0E3 /* OALUtilityActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALUtilityActions.m; sourceTree = "<group>"; };
+		01E87ACA1A034E1300ABF0E3 /* OALAudioTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioTrack.h; sourceTree = "<group>"; };
+		01E87ACB1A034E1300ABF0E3 /* OALAudioTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioTrack.m; sourceTree = "<group>"; };
+		01E87ACC1A034E1300ABF0E3 /* OALAudioTrackNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioTrackNotifications.h; sourceTree = "<group>"; };
+		01E87ACD1A034E1300ABF0E3 /* OALAudioTrackNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioTrackNotifications.m; sourceTree = "<group>"; };
+		01E87ACE1A034E1300ABF0E3 /* OALAudioTracks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioTracks.h; sourceTree = "<group>"; };
+		01E87ACF1A034E1300ABF0E3 /* OALAudioTracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioTracks.m; sourceTree = "<group>"; };
+		01E87AD01A034E1300ABF0E3 /* OALSimpleAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALSimpleAudio.h; sourceTree = "<group>"; };
+		01E87AD11A034E1300ABF0E3 /* OALSimpleAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALSimpleAudio.m; sourceTree = "<group>"; };
+		01E87AD21A034E1300ABF0E3 /* ObjectAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectAL.h; sourceTree = "<group>"; };
+		01E87AD31A034E1300ABF0E3 /* ObjectALConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectALConfig.h; sourceTree = "<group>"; };
+		01E87AD51A034E1300ABF0E3 /* ALBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBuffer.h; sourceTree = "<group>"; };
+		01E87AD61A034E1300ABF0E3 /* ALBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALBuffer.m; sourceTree = "<group>"; };
+		01E87AD71A034E1300ABF0E3 /* ALCaptureDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCaptureDevice.h; sourceTree = "<group>"; };
+		01E87AD81A034E1300ABF0E3 /* ALCaptureDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCaptureDevice.m; sourceTree = "<group>"; };
+		01E87AD91A034E1300ABF0E3 /* ALChannelSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALChannelSource.h; sourceTree = "<group>"; };
+		01E87ADA1A034E1300ABF0E3 /* ALChannelSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALChannelSource.m; sourceTree = "<group>"; };
+		01E87ADB1A034E1300ABF0E3 /* ALContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALContext.h; sourceTree = "<group>"; };
+		01E87ADC1A034E1300ABF0E3 /* ALContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALContext.m; sourceTree = "<group>"; };
+		01E87ADD1A034E1300ABF0E3 /* ALDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDevice.h; sourceTree = "<group>"; };
+		01E87ADE1A034E1300ABF0E3 /* ALDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDevice.m; sourceTree = "<group>"; };
+		01E87ADF1A034E1300ABF0E3 /* ALListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALListener.h; sourceTree = "<group>"; };
+		01E87AE01A034E1300ABF0E3 /* ALListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALListener.m; sourceTree = "<group>"; };
+		01E87AE11A034E1300ABF0E3 /* ALSoundSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSoundSource.h; sourceTree = "<group>"; };
+		01E87AE21A034E1300ABF0E3 /* ALSoundSourcePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSoundSourcePool.h; sourceTree = "<group>"; };
+		01E87AE31A034E1300ABF0E3 /* ALSoundSourcePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSoundSourcePool.m; sourceTree = "<group>"; };
+		01E87AE41A034E1300ABF0E3 /* ALSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSource.h; sourceTree = "<group>"; };
+		01E87AE51A034E1300ABF0E3 /* ALSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSource.m; sourceTree = "<group>"; };
+		01E87AE61A034E1300ABF0E3 /* ALTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTypes.h; sourceTree = "<group>"; };
+		01E87AE71A034E1300ABF0E3 /* ALWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALWrapper.h; sourceTree = "<group>"; };
+		01E87AE81A034E1300ABF0E3 /* ALWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALWrapper.m; sourceTree = "<group>"; };
+		01E87AE91A034E1300ABF0E3 /* OpenALManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenALManager.h; sourceTree = "<group>"; };
+		01E87AEA1A034E1300ABF0E3 /* OpenALManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenALManager.m; sourceTree = "<group>"; };
+		01E87AEC1A034E1300ABF0E3 /* OALAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioSession.h; sourceTree = "<group>"; };
+		01E87AED1A034E1300ABF0E3 /* OALAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioSession.m; sourceTree = "<group>"; };
+		01E87AEE1A034E1300ABF0E3 /* OALSuspendHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALSuspendHandler.h; sourceTree = "<group>"; };
+		01E87AEF1A034E1300ABF0E3 /* OALSuspendHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALSuspendHandler.m; sourceTree = "<group>"; };
+		01E87AF11A034E1300ABF0E3 /* ARCSafe_MemMgmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCSafe_MemMgmt.h; sourceTree = "<group>"; };
+		01E87AF21A034E1300ABF0E3 /* IOSVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSVersion.h; sourceTree = "<group>"; };
+		01E87AF31A034E1300ABF0E3 /* IOSVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSVersion.m; sourceTree = "<group>"; };
+		01E87AF41A034E1300ABF0E3 /* mach_timing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_timing.c; sourceTree = "<group>"; };
+		01E87AF51A034E1300ABF0E3 /* mach_timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_timing.h; sourceTree = "<group>"; };
+		01E87AF61A034E1300ABF0E3 /* NSMutableArray+WeakReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WeakReferences.h"; sourceTree = "<group>"; };
+		01E87AF71A034E1300ABF0E3 /* NSMutableArray+WeakReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WeakReferences.m"; sourceTree = "<group>"; };
+		01E87AF81A034E1300ABF0E3 /* NSMutableDictionary+WeakReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+WeakReferences.h"; sourceTree = "<group>"; };
+		01E87AF91A034E1300ABF0E3 /* NSMutableDictionary+WeakReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+WeakReferences.m"; sourceTree = "<group>"; };
+		01E87AFA1A034E1300ABF0E3 /* OALAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioFile.h; sourceTree = "<group>"; };
+		01E87AFB1A034E1300ABF0E3 /* OALAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioFile.m; sourceTree = "<group>"; };
+		01E87AFC1A034E1300ABF0E3 /* OALNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALNotifications.h; sourceTree = "<group>"; };
+		01E87AFD1A034E1300ABF0E3 /* OALTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALTools.h; sourceTree = "<group>"; };
+		01E87AFE1A034E1300ABF0E3 /* OALTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALTools.m; sourceTree = "<group>"; };
+		01E87AFF1A034E1300ABF0E3 /* ObjectALMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectALMacros.h; sourceTree = "<group>"; };
+		01E87B001A034E1300ABF0E3 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0191B23B19626C180049A20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0116F2521ADF631300BFAD80 /* CoreAudio.framework in Frameworks */,
+				0109A8721ADF3D3700D2DAA2 /* MediaPlayer.framework in Frameworks */,
+				01AB35091A0343560040D30B /* OpenAL.framework in Frameworks */,
+				01AB35071A033F9E0040D30B /* AudioToolbox.framework in Frameworks */,
+				0196DD60196BABF80080ABD4 /* AVFoundation.framework in Frameworks */,
+				0191B24419626C180049A20C /* CoreGraphics.framework in Frameworks */,
+				0191B24619626C180049A20C /* UIKit.framework in Frameworks */,
+				0191B24219626C180049A20C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0191B25C19626C180049A20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0191B26119626C180049A20C /* XCTest.framework in Frameworks */,
+				0191B26319626C180049A20C /* UIKit.framework in Frameworks */,
+				0191B26219626C180049A20C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0191B23519626C180049A20C = {
+			isa = PBXGroup;
+			children = (
+				0191B24719626C180049A20C /* DrMetMD */,
+				0191B26619626C180049A20C /* DrMetMDTests */,
+				0191B24019626C180049A20C /* Frameworks */,
+				0191B23F19626C180049A20C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0191B23F19626C180049A20C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0191B23E19626C180049A20C /* DrMetMD.app */,
+				0191B25F19626C180049A20C /* DrMetMDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0191B24019626C180049A20C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0116F2511ADF631300BFAD80 /* CoreAudio.framework */,
+				0109A8711ADF3D3700D2DAA2 /* MediaPlayer.framework */,
+				01E87ABC1A034A0600ABF0E3 /* libFinch.a */,
+				01AB35861A0346980040D30B /* libFinch.a */,
+				01AB35081A0343560040D30B /* OpenAL.framework */,
+				01AB35061A033F9E0040D30B /* AudioToolbox.framework */,
+				0196DD5F196BABF80080ABD4 /* AVFoundation.framework */,
+				0191B24119626C180049A20C /* Foundation.framework */,
+				0191B24319626C180049A20C /* CoreGraphics.framework */,
+				0191B24519626C180049A20C /* UIKit.framework */,
+				0191B26019626C180049A20C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0191B24719626C180049A20C /* DrMetMD */ = {
+			isa = PBXGroup;
+			children = (
+				0191B25019626C180049A20C /* AppDelegate.h */,
+				0191B25119626C180049A20C /* AppDelegate.m */,
+				0191B25319626C180049A20C /* Main.storyboard */,
+				0191B25619626C180049A20C /* ViewController.h */,
+				0191B25719626C180049A20C /* ViewController.m */,
+				013977FC1B5701FB0059CE13 /* Metronome.h */,
+				013977FD1B5701FB0059CE13 /* Metronome.m */,
+				0191B25919626C180049A20C /* Images.xcassets */,
+				01E87ABE1A034E1300ABF0E3 /* ObjectAL */,
+				0191B24819626C180049A20C /* Supporting Files */,
+			);
+			path = DrMetMD;
+			sourceTree = "<group>";
+		};
+		0191B24819626C180049A20C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01584DAC1A9EC285008DE15A /* hi_click loud.wav */,
+				01584DAD1A9EC285008DE15A /* low_click loud.wav */,
+				01584DAE1A9EC285008DE15A /* softclick hi res.wav */,
+				01A85CFB19947EA100DD0299 /* 1.wav */,
+				0191B24919626C180049A20C /* DrMetMD-Info.plist */,
+				0191B24A19626C180049A20C /* InfoPlist.strings */,
+				0191B24D19626C180049A20C /* main.m */,
+				0191B24F19626C180049A20C /* DrMetMD-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0191B26619626C180049A20C /* DrMetMDTests */ = {
+			isa = PBXGroup;
+			children = (
+				0191B26C19626C180049A20C /* DrMetMDTests.m */,
+				0191B26719626C180049A20C /* Supporting Files */,
+			);
+			path = DrMetMDTests;
+			sourceTree = "<group>";
+		};
+		0191B26719626C180049A20C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0191B26819626C180049A20C /* DrMetMDTests-Info.plist */,
+				0191B26919626C180049A20C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01E87ABE1A034E1300ABF0E3 /* ObjectAL */ = {
+			isa = PBXGroup;
+			children = (
+				01E87ABF1A034E1300ABF0E3 /* Actions */,
+				01E87AC91A034E1300ABF0E3 /* AudioTrack */,
+				01E87AD01A034E1300ABF0E3 /* OALSimpleAudio.h */,
+				01E87AD11A034E1300ABF0E3 /* OALSimpleAudio.m */,
+				01E87AD21A034E1300ABF0E3 /* ObjectAL.h */,
+				01E87AD31A034E1300ABF0E3 /* ObjectALConfig.h */,
+				01E87AD41A034E1300ABF0E3 /* OpenAL */,
+				01E87AEB1A034E1300ABF0E3 /* Session */,
+				01E87AF01A034E1300ABF0E3 /* Support */,
+			);
+			path = ObjectAL;
+			sourceTree = "<group>";
+		};
+		01E87ABF1A034E1300ABF0E3 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				01E87AC01A034E1300ABF0E3 /* OALAction+Private.h */,
+				01E87AC11A034E1300ABF0E3 /* OALAction.h */,
+				01E87AC21A034E1300ABF0E3 /* OALAction.m */,
+				01E87AC31A034E1300ABF0E3 /* OALActionManager.h */,
+				01E87AC41A034E1300ABF0E3 /* OALActionManager.m */,
+				01E87AC51A034E1300ABF0E3 /* OALAudioActions.h */,
+				01E87AC61A034E1300ABF0E3 /* OALAudioActions.m */,
+				01E87AC71A034E1300ABF0E3 /* OALUtilityActions.h */,
+				01E87AC81A034E1300ABF0E3 /* OALUtilityActions.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		01E87AC91A034E1300ABF0E3 /* AudioTrack */ = {
+			isa = PBXGroup;
+			children = (
+				01E87ACA1A034E1300ABF0E3 /* OALAudioTrack.h */,
+				01E87ACB1A034E1300ABF0E3 /* OALAudioTrack.m */,
+				01E87ACC1A034E1300ABF0E3 /* OALAudioTrackNotifications.h */,
+				01E87ACD1A034E1300ABF0E3 /* OALAudioTrackNotifications.m */,
+				01E87ACE1A034E1300ABF0E3 /* OALAudioTracks.h */,
+				01E87ACF1A034E1300ABF0E3 /* OALAudioTracks.m */,
+			);
+			path = AudioTrack;
+			sourceTree = "<group>";
+		};
+		01E87AD41A034E1300ABF0E3 /* OpenAL */ = {
+			isa = PBXGroup;
+			children = (
+				01E87AD51A034E1300ABF0E3 /* ALBuffer.h */,
+				01E87AD61A034E1300ABF0E3 /* ALBuffer.m */,
+				01E87AD71A034E1300ABF0E3 /* ALCaptureDevice.h */,
+				01E87AD81A034E1300ABF0E3 /* ALCaptureDevice.m */,
+				01E87AD91A034E1300ABF0E3 /* ALChannelSource.h */,
+				01E87ADA1A034E1300ABF0E3 /* ALChannelSource.m */,
+				01E87ADB1A034E1300ABF0E3 /* ALContext.h */,
+				01E87ADC1A034E1300ABF0E3 /* ALContext.m */,
+				01E87ADD1A034E1300ABF0E3 /* ALDevice.h */,
+				01E87ADE1A034E1300ABF0E3 /* ALDevice.m */,
+				01E87ADF1A034E1300ABF0E3 /* ALListener.h */,
+				01E87AE01A034E1300ABF0E3 /* ALListener.m */,
+				01E87AE11A034E1300ABF0E3 /* ALSoundSource.h */,
+				01E87AE21A034E1300ABF0E3 /* ALSoundSourcePool.h */,
+				01E87AE31A034E1300ABF0E3 /* ALSoundSourcePool.m */,
+				01E87AE41A034E1300ABF0E3 /* ALSource.h */,
+				01E87AE51A034E1300ABF0E3 /* ALSource.m */,
+				01E87AE61A034E1300ABF0E3 /* ALTypes.h */,
+				01E87AE71A034E1300ABF0E3 /* ALWrapper.h */,
+				01E87AE81A034E1300ABF0E3 /* ALWrapper.m */,
+				01E87AE91A034E1300ABF0E3 /* OpenALManager.h */,
+				01E87AEA1A034E1300ABF0E3 /* OpenALManager.m */,
+			);
+			path = OpenAL;
+			sourceTree = "<group>";
+		};
+		01E87AEB1A034E1300ABF0E3 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				01E87AEC1A034E1300ABF0E3 /* OALAudioSession.h */,
+				01E87AED1A034E1300ABF0E3 /* OALAudioSession.m */,
+				01E87AEE1A034E1300ABF0E3 /* OALSuspendHandler.h */,
+				01E87AEF1A034E1300ABF0E3 /* OALSuspendHandler.m */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		01E87AF01A034E1300ABF0E3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				01E87AF11A034E1300ABF0E3 /* ARCSafe_MemMgmt.h */,
+				01E87AF21A034E1300ABF0E3 /* IOSVersion.h */,
+				01E87AF31A034E1300ABF0E3 /* IOSVersion.m */,
+				01E87AF41A034E1300ABF0E3 /* mach_timing.c */,
+				01E87AF51A034E1300ABF0E3 /* mach_timing.h */,
+				01E87AF61A034E1300ABF0E3 /* NSMutableArray+WeakReferences.h */,
+				01E87AF71A034E1300ABF0E3 /* NSMutableArray+WeakReferences.m */,
+				01E87AF81A034E1300ABF0E3 /* NSMutableDictionary+WeakReferences.h */,
+				01E87AF91A034E1300ABF0E3 /* NSMutableDictionary+WeakReferences.m */,
+				01E87AFA1A034E1300ABF0E3 /* OALAudioFile.h */,
+				01E87AFB1A034E1300ABF0E3 /* OALAudioFile.m */,
+				01E87AFC1A034E1300ABF0E3 /* OALNotifications.h */,
+				01E87AFD1A034E1300ABF0E3 /* OALTools.h */,
+				01E87AFE1A034E1300ABF0E3 /* OALTools.m */,
+				01E87AFF1A034E1300ABF0E3 /* ObjectALMacros.h */,
+				01E87B001A034E1300ABF0E3 /* SynthesizeSingleton.h */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0191B23D19626C180049A20C /* DrMetMD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0191B27019626C180049A20C /* Build configuration list for PBXNativeTarget "DrMetMD" */;
+			buildPhases = (
+				0191B23A19626C180049A20C /* Sources */,
+				0191B23B19626C180049A20C /* Frameworks */,
+				0191B23C19626C180049A20C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrMetMD;
+			productName = DrMetMD;
+			productReference = 0191B23E19626C180049A20C /* DrMetMD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0191B25E19626C180049A20C /* DrMetMDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0191B27319626C180049A20C /* Build configuration list for PBXNativeTarget "DrMetMDTests" */;
+			buildPhases = (
+				0191B25B19626C180049A20C /* Sources */,
+				0191B25C19626C180049A20C /* Frameworks */,
+				0191B25D19626C180049A20C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0191B26519626C180049A20C /* PBXTargetDependency */,
+			);
+			name = DrMetMDTests;
+			productName = DrMetMDTests;
+			productReference = 0191B25F19626C180049A20C /* DrMetMDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0191B23619626C180049A20C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = mackhagen;
+				TargetAttributes = {
+					0191B23D19626C180049A20C = {
+						DevelopmentTeam = A78XEX9T88;
+					};
+					0191B25E19626C180049A20C = {
+						TestTargetID = 0191B23D19626C180049A20C;
+					};
+				};
+			};
+			buildConfigurationList = 0191B23919626C180049A20C /* Build configuration list for PBXProject "DrMetMD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0191B23519626C180049A20C;
+			productRefGroup = 0191B23F19626C180049A20C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0191B23D19626C180049A20C /* DrMetMD */,
+				0191B25E19626C180049A20C /* DrMetMDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0191B23C19626C180049A20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0191B25A19626C180049A20C /* Images.xcassets in Resources */,
+				01584DB01A9EC285008DE15A /* low_click loud.wav in Resources */,
+				01584DB11A9EC285008DE15A /* softclick hi res.wav in Resources */,
+				0191B24C19626C180049A20C /* InfoPlist.strings in Resources */,
+				01A85CFC19947EA100DD0299 /* 1.wav in Resources */,
+				0191B25519626C180049A20C /* Main.storyboard in Resources */,
+				01584DAF1A9EC285008DE15A /* hi_click loud.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0191B25D19626C180049A20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0191B26B19626C180049A20C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0191B23A19626C180049A20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E87B091A034E1300ABF0E3 /* ALBuffer.m in Sources */,
+				01E87B101A034E1300ABF0E3 /* ALSource.m in Sources */,
+				01E87B141A034E1300ABF0E3 /* OALSuspendHandler.m in Sources */,
+				01E87B0A1A034E1300ABF0E3 /* ALCaptureDevice.m in Sources */,
+				01E87B181A034E1300ABF0E3 /* NSMutableDictionary+WeakReferences.m in Sources */,
+				01E87B0D1A034E1300ABF0E3 /* ALDevice.m in Sources */,
+				01E87B0C1A034E1300ABF0E3 /* ALContext.m in Sources */,
+				01E87B011A034E1300ABF0E3 /* OALAction.m in Sources */,
+				01E87B171A034E1300ABF0E3 /* NSMutableArray+WeakReferences.m in Sources */,
+				01E87B031A034E1300ABF0E3 /* OALAudioActions.m in Sources */,
+				01E87B061A034E1300ABF0E3 /* OALAudioTrackNotifications.m in Sources */,
+				01E87B131A034E1300ABF0E3 /* OALAudioSession.m in Sources */,
+				01E87B0F1A034E1300ABF0E3 /* ALSoundSourcePool.m in Sources */,
+				0191B25819626C180049A20C /* ViewController.m in Sources */,
+				013977FE1B5701FB0059CE13 /* Metronome.m in Sources */,
+				01E87B161A034E1300ABF0E3 /* mach_timing.c in Sources */,
+				01E87B041A034E1300ABF0E3 /* OALUtilityActions.m in Sources */,
+				01E87B081A034E1300ABF0E3 /* OALSimpleAudio.m in Sources */,
+				01E87B111A034E1300ABF0E3 /* ALWrapper.m in Sources */,
+				0191B25219626C180049A20C /* AppDelegate.m in Sources */,
+				01E87B151A034E1300ABF0E3 /* IOSVersion.m in Sources */,
+				01E87B051A034E1300ABF0E3 /* OALAudioTrack.m in Sources */,
+				01E87B071A034E1300ABF0E3 /* OALAudioTracks.m in Sources */,
+				01E87B1A1A034E1300ABF0E3 /* OALTools.m in Sources */,
+				0191B24E19626C180049A20C /* main.m in Sources */,
+				01E87B021A034E1300ABF0E3 /* OALActionManager.m in Sources */,
+				01E87B0B1A034E1300ABF0E3 /* ALChannelSource.m in Sources */,
+				01E87B121A034E1300ABF0E3 /* OpenALManager.m in Sources */,
+				01E87B0E1A034E1300ABF0E3 /* ALListener.m in Sources */,
+				01E87B191A034E1300ABF0E3 /* OALAudioFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0191B25B19626C180049A20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0191B26D19626C180049A20C /* DrMetMDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0191B26519626C180049A20C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0191B23D19626C180049A20C /* DrMetMD */;
+			targetProxy = 0191B26419626C180049A20C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0191B24A19626C180049A20C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0191B24B19626C180049A20C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0191B25319626C180049A20C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0191B25419626C180049A20C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0191B26919626C180049A20C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0191B26A19626C180049A20C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0191B26E19626C180049A20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0191B26F19626C180049A20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0191B27119626C180049A20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mackenzie Hagen (98VSTH3KW9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mackenzie Hagen (98VSTH3KW9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrMetMD/DrMetMD-Prefix.pch";
+				INFOPLIST_FILE = "DrMetMD/DrMetMD-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackhagen.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0191B27219626C180049A20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mackenzie Hagen (98VSTH3KW9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mackenzie Hagen (98VSTH3KW9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrMetMD/DrMetMD-Prefix.pch";
+				INFOPLIST_FILE = "DrMetMD/DrMetMD-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackhagen.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0191B27419626C180049A20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrMetMD.app/DrMetMD";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrMetMD/DrMetMD-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DrMetMDTests/DrMetMDTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackhagen.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0191B27519626C180049A20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrMetMD.app/DrMetMD";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrMetMD/DrMetMD-Prefix.pch";
+				INFOPLIST_FILE = "DrMetMDTests/DrMetMDTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackhagen.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0191B23919626C180049A20C /* Build configuration list for PBXProject "DrMetMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0191B26E19626C180049A20C /* Debug */,
+				0191B26F19626C180049A20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0191B27019626C180049A20C /* Build configuration list for PBXNativeTarget "DrMetMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0191B27119626C180049A20C /* Debug */,
+				0191B27219626C180049A20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0191B27319626C180049A20C /* Build configuration list for PBXNativeTarget "DrMetMDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0191B27419626C180049A20C /* Debug */,
+				0191B27519626C180049A20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0191B23619626C180049A20C /* Project object */;
+}
